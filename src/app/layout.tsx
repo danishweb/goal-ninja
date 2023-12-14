@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import HydrationZustand from "@/components/zustand-hydration";
+import HydrationZustand from "@/utils/zustand-hydration";
 
 const inter = Inter({ subsets: ["latin"] });
 
