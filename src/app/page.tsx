@@ -1,15 +1,15 @@
-'use client'
-import { useState } from 'react';
-import useGoalStore from '@/store/goal-store';
+"use client";
+import { useState } from "react";
+import useGoalStore from "@/store/goal-store";
 
 export default function Home() {
   const { goals, addGoal } = useGoalStore();
-  const [newGoal, setNewGoal] = useState<string>('');
+  const [newGoal, setNewGoal] = useState<string>("");
 
   const handleAddGoal = () => {
-    if (newGoal.trim() !== '') {
-      addGoal({name:newGoal});
-      setNewGoal('');
+    if (newGoal.trim() !== "") {
+      addGoal({ name: newGoal });
+      setNewGoal("");
     }
   };
 
